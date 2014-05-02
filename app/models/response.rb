@@ -1,3 +1,5 @@
 class Response < ActiveRecord::Base
-  # Remember to create a migration!
+  validates_uniqueness_of :user_id, :scope => :survey_id
+  belongs_to :user
+  belongs_to :survey
 end
