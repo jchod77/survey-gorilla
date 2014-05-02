@@ -4,7 +4,7 @@ def BowDown
 end
 
 
-def fuckoff
+def buzzoff
 
 end
 
