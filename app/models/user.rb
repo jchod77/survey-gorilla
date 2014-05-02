@@ -1,3 +1,5 @@
 class User < ActiveRecord::Base
-  # Remember to create a migration!
+	has_many :responses
+	has_many :created_surveys, :class_name => "Survey", :foreign_key => :creator_id
+	validates :name, uniqueness: true
 end
